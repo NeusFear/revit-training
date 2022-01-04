@@ -17,6 +17,14 @@
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
+.markdown h4 {
+  @apply text-xs text-neutral-700
+}
+
 .markdown a {
   @apply text-blue-600 hover:underline
+}
+
+.markdown code {
+  @apply bg-neutral-300 text-sm p-1 rounded-md
 }
