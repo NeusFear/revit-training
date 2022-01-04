@@ -11,7 +11,6 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
       <div className="w-screen min-h-screen flex flex-row">
         <div className="bg-neutral-800 min-h-full w-96">
           <h1 className="w-full bg-neutral-700 text-xl text-white px-6 py-2 mb-2">Lessons</h1>
-          {console.log(allPosts)}
           {allPosts.map((post, index) => ( 
             <LessonListItem title={post.title} route={post.slug} key={"post" + index + post.slug} />
           ))}

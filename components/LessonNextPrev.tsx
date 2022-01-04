@@ -61,7 +61,7 @@ const NothingToSeeHere = ({ prev }: { prev: boolean}) => {
         prev ?
           <p className="px-5">No lessons before this one</p>
           :
-          <p className="px-5">You've read all the lessons for now. Awesome!</p>
+          <p className="px-5">You&apos;ve read all the lessons for now. Awesome!</p>
       }
     </div>
   );
