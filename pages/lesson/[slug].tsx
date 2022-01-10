@@ -1,5 +1,6 @@
 import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
+import { SVGProps } from 'react'
 import BackgroundImage from '../../components/BackgroundImage'
 import Container from '../../components/Container'
 import DateFormatter from '../../components/DateFormatter'
@@ -24,7 +25,7 @@ export default function Post({ post, prevPost, nextPost }: { post: PostType, pre
         pageName={post.title}
         pageDesc={post.excerpt}
         ogImage={{ "path": post.coverImage, width: 1280, height: 640 }}
-        article={{ "title": post.title, "publisher": "Oklahoma State University SOA", "category": "Education", "tags": ["revit", "training", "tutorial", "lessons"], "publishedTime": post.date}}
+        article={{ "title": post.title, "publisher": "Oklahoma State University SOA", "category": "Education", "tags": ["revit", "training", "tutorial", "lessons"], "publishedTime": post.date }}
       />
       <Navbar />
       {router.isFallback ? (
@@ -43,6 +44,7 @@ export default function Post({ post, prevPost, nextPost }: { post: PostType, pre
               </h1>
               <DateFormatter dateString={post.date} />
               <div className="w-full bg-neutral-800 h-0.5 my-10"></div>
+              {post.files && <FileDownloaderList files={post.files} />}
               <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           </article>
@@ -51,6 +53,38 @@ export default function Post({ post, prevPost, nextPost }: { post: PostType, pre
       )}
       <Footer />
     </div>
+  )
+}
+
+const FileDownloaderList = ({ files }: { files: string[] }) => {
+  return (
+    <div>
+      <h2 className="text-xl font-semibold mb-2">Files you&apos;ll need to complete this Lesson</h2>
+      {files.map((file, index) => (
+        <FileDownloader file={file} key={"file" + index} />
+      ))}
+      <div className="w-full bg-neutral-800 h-0.5 my-10"></div>
+    </div>
+  );
+}
+
+const FileDownloader = ({ file }: { file: string }) => { 
+  
+  const fileName = file.split("/");
+
+  return (
+    <div className="bg-neutral-300 rounded-md p-4 flex flex-row">
+      <SVGDownload className="w-4 h-4" />
+      <a className="text-xs ml-4" href={file} download>{fileName[fileName.length - 1]}</a>
+    </div>
+  );
+}
+
+const SVGDownload = (props: SVGProps<SVGSVGElement>) => {
+  return (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
   )
 }
 
@@ -76,6 +110,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'slug',
     'content',
     'coverImage',
+    'files'
   ])
   const content = await markdownToHtml(post.content || '')
 
