@@ -75,7 +75,7 @@ const FileDownloader = ({ file }: { file: string }) => {
   return (
     <div className="bg-neutral-300 rounded-md p-4 flex flex-row">
       <SVGDownload className="w-4 h-4" />
-      <a className="text-xs ml-4" href={file} download>{fileName[fileName.length - 1]}</a>
+      <a className="text-xs ml-4 hover:underline" href={file} download>{fileName[fileName.length - 1]}</a>
     </div>
   );
 }

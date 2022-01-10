@@ -16,7 +16,7 @@ const Navbar = () => {
         <p className="pt-5">LEARN REVIT ONLINE</p>
       </div>
       <div className="flex-grow"></div>
-      <DarkModeSwitch />
+      { /* <DarkModeSwitch /> */ }
     </div>
   );
 }
