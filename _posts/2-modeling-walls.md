@@ -1,7 +1,7 @@
 ---
 title: 'Modeling Walls'
 excerpt: 'This article goes over how to place interior and exterior walls in revit with an underlay.'
-coverImage: '/images/0-downloading-revit/cover.jpg'
+coverImage: '/images/2-modeling-walls/cover.jpg'
 date: '2022-01-10T09:35:07.322Z'
 files: [
   '/sources/lesson_2/Lab01_E1_Modeling Exterior and Interior Walls.rvt'
@@ -42,3 +42,5 @@ Once completed your building should look like this (new walls selected):
 ## Save your file
 
 Save your file as ``Spring2022_3262_firstinitial_lastname_LAB01_EX01.rvt``
+
+#### Cover Image Credits: easyrender.com

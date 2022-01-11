@@ -40,5 +40,3 @@ Firstly navigate to [Autodesk Revit 2022 Content](https://knowledge.autodesk.com
 Once there scroll down to the table and look for the row for content in your language. For Oklahoma State University students and for us in this book we will be using the pack called **"US English Content for Revit 2022"**. Download that file and once it's downloaded run it. Follow the steps provided if any.
 
 These libraries being downloaded does not link them to Revit automatically, you will likely need to import them to your model manually when you need to use them. We will go over the steps to doing this later, but all you need to know is that the content (on windows at least) is located at ``C:\ProgramData\Autodesk\RVT 2022\Libraries`` when you need to find them.
-
-#### Cover Image Credits: archcgi.com

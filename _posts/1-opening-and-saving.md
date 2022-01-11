@@ -1,7 +1,7 @@
 ---
 title: 'Opening & Saving'
 excerpt: 'This article goes over how to open a project file and identifies the main User Interface components.'
-coverImage: '/images/0-downloading-revit/cover.jpg'
+coverImage: '/images/1-opening-and-saving/cover.jpg'
 date: '2022-01-03T09:37:07.322Z'
 files: [
   '/sources/lesson_1/Lab00_E1_Residential Floor plan.dwg'
@@ -44,3 +44,5 @@ Browse through the different Ribbon tabs to familiarize yourself with where a lo
 ## Save the file
 
 Save the Revit file as: ``Spring2022_3262_firstinitial_lastname_LAB00_EX01.rvt``
+
+#### Cover Image Credits: archcgi.com

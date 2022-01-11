@@ -1,7 +1,7 @@
 ---
 title: 'Doors and Windows'
 excerpt: 'This article goes over how to place doors and windows in your walls.'
-coverImage: '/images/0-downloading-revit/cover.jpg'
+coverImage: '/images/3-doors-and-windows/cover.jpg'
 date: '2022-01-10T09:36:07.322Z'
 files: [
   '/sources/lesson_3/Lab01_E2_Adding Doors and Windows.rvt'
@@ -69,3 +69,5 @@ Make sure you have the source files downloaded for this exercise. You can get th
 ## Save your file
 
 Save your file as ``Spring2022_3262_firstinitial_lastname_LAB01_EX02.rvt``
+
+#### Cover Image Credits: archdaily.com

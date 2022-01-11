@@ -1,7 +1,7 @@
 ---
 title: 'Floors and Roofs'
 excerpt: 'Learn how to create floors and roofs for your revit models.'
-coverImage: '/images/0-downloading-revit/cover.jpg'
+coverImage: '/images/4-floors-and-roofs/cover.jpg'
 date: '2022-01-10T09:37:07.322Z'
 files: [
   '/sources/lesson_4/Lab01_E3_Creating Roofs.rvt'
@@ -49,3 +49,5 @@ Make sure you have the source files downloaded for this exercise. You can get th
 ## Save your file
 
 Save your file as ``Spring2022_3262_firstinitial_lastname_LAB01_EX03.rvt``
+
+#### Cover Image Credits: xo3d.co.uk

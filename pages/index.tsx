@@ -31,6 +31,7 @@ const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
       />
       <div className="py-4 px-8 text-white">
         <h3 className="text-2xl mb-3 leading-snug">
+          <p className="text-xs -mb-1.5 text-neutral-500">Lesson {index}</p>
           <Link as={`/lesson/${post.slug}`} href="/lesson/[slug]">
             <a className="hover:underline font-semibold">{post.title}</a>
           </Link>
