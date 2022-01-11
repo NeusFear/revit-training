@@ -39,9 +39,9 @@
 }
 
 .markdown ol {
-  @apply list-decimal
+  @apply list-decimal ml-5 lg:ml-0
 }
 
 .markdown ul {
-  @apply list-disc
+  @apply list-disc ml-5 lg:ml-0
 }

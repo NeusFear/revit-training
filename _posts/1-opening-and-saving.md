@@ -4,7 +4,7 @@ excerpt: 'This article goes over how to open a project file and identifies the m
 coverImage: '/images/0-downloading-revit/cover.jpg'
 date: '2022-01-03T09:37:07.322Z'
 files: [
-  '/sources/lesson_0/Lab00_E1_Residential Floor plan.dwg'
+  '/sources/lesson_1/Lab00_E1_Residential Floor plan.dwg'
 ]
 ---
 
