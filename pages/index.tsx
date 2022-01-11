@@ -12,7 +12,7 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
         {allPosts.map((post, index) => (
-          index < 1 && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+          index < 2 && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
       <Footer />
@@ -36,9 +36,10 @@ const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
           </Link>
         </h3>
         <div className="mb-2">
+          <p className="text-xs -mb-1.5 text-neutral-500">Date Posted</p>
           <DateFormatter dateString={post.date} />
         </div>
-        <p className="text-xs leading-relaxed mb-4">{post.excerpt}</p>
+        <p className="text-xs leading-relaxed mb-4 text-neutral-300">{post.excerpt}</p>
       </div>
     </div>
   )

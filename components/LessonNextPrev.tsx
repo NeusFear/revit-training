@@ -26,7 +26,7 @@ const PostPreview = ({ post, prev }: { post: PostType, prev: boolean }) => {
       />
       <div className="py-4 px-8 text-white">
         <h3 className="text-2xl mb-3 leading-snug">
-          <Link as={`/blog/${post.slug}`} href="/blog/[slug]">
+          <Link as={`/lesson/${post.slug}`} href="/lesson/[slug]">
             <a className="hover:underline font-semibold">{post.title}</a>
           </Link>
         </h3>

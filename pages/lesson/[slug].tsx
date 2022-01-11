@@ -119,6 +119,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'date',
     'coverImage',
     'excerpt',
+    'slug'
   ])
 
   const nextPost = getNextPost(params.slug, [
@@ -126,6 +127,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'date',
     'coverImage',
     'excerpt',
+    'slug'
   ])
 
   return {

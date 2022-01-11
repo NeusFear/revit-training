@@ -10,7 +10,7 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-16 mb-4 leading-snug font-semibold;
 }
 
 .markdown h3 {
@@ -21,10 +21,27 @@
   @apply text-xs text-neutral-700
 }
 
+.markdown h5 {
+  @apply bg-neutral-300 rounded-md mr-10 text-sm mb-2
+}
+
+.markdown h5::before {
+  @apply bg-teal-300 rounded-full px-2 text-sm m-2;
+  content: "!"
+}
+
 .markdown a {
   @apply text-blue-600 hover:underline
 }
 
 .markdown code {
   @apply bg-neutral-300 text-sm p-1 rounded-md
+}
+
+.markdown ol {
+  @apply list-decimal
+}
+
+.markdown ul {
+  @apply list-disc
 }
