@@ -49,7 +49,7 @@ const CoverImage = ({ title, src, slug }: { title: string, src: string, slug: st
 
   return (
     <div className="sm:mx-0">
-      {slug ? <Link as={`/blog/${slug}`} href="/blog/[slug]"><a aria-label={title}>{image}</a></Link> : image}
+      {slug ? <Link as={`/lesson/${slug}`} href="/lesson/[slug]"><a aria-label={title}>{image}</a></Link> : image}
     </div>
   )
 }
