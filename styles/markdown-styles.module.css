@@ -45,3 +45,7 @@
 .markdown ul {
   @apply list-disc ml-5 lg:ml-0
 }
+
+.markdown img {
+  @apply my-1;
+}
