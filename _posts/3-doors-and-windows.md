@@ -61,7 +61,7 @@ Make sure you have the source files downloaded for this exercise. You can get th
 3. Select the two ``Type A`` windows by holding down the ``CTRL`` key and clicking on both of them.
 4. In the properties palette, change the ``Head Height`` value to ``7' 0"``
 
-![Head Height](/images/3-doors-and-windows/window-corner.png)
+![Head Height](/lessons/3-doors-and-windows/window-corner.png)
 
 5. Click ``Apply`` at the bottom of the properties palette to confirm the changes and you will see that these windows now line up!
 6. Repeat steps 3 through 5 for window types ``B`` ``C`` and ``D`` separately to make all of them line up as well.

@@ -22,16 +22,16 @@ Make sure you have the source files downloaded for this exercise. You can get th
 4. In the properties palette select the ``Basic Roof Generic - 12"`` roof type and set the ``Base Offset from Level`` to ``0' 0"``.
 5. Click on the ``Modify | Create Roof Footprint`` tab if it's not automatically selected.
 6. Click on the ``Boundary Line`` and ``Line Mode`` Buttons as shown in the image below.
-![Boundary Line](/images/4-floors-and-roofs/flat-roof-1.png)
+![Boundary Line](/lessons/4-floors-and-roofs/flat-roof-1.png)
 7. Uncheck the ``Defines Slope`` checkbox. Highlighted in above screenshot.
 8. Create a closed boundary along the inside of the walls as highlighted in the images above in blue.
 9. Click the green check mark button to confirm your boundary sketch.
 10. Open the ``Carport Roof`` plan view.
 11. Repeat the above steps to create a roof around the carport.
-![Boundary Line](/images/4-floors-and-roofs/flat-roof-2.png)
+![Boundary Line](/lessons/4-floors-and-roofs/flat-roof-2.png)
 12. Click the ``Modify`` button on the left side of the Ribbon to end roof creation.
 13. Select the wall shown and attach it to the carport roof with the ``Attatch Top/Base`` button in the ribbon then by clicking on the carport roof.
-![Boundary Line](/images/4-floors-and-roofs/attach.png)
+![Boundary Line](/lessons/4-floors-and-roofs/attach.png)
 
 ## Create a Pitched Roof
 
@@ -44,7 +44,7 @@ Make sure you have the source files downloaded for this exercise. You can get th
 7. Confirm your boundary.
 8. If it asks to attach walls, click yes.
 7. Click ``Modify`` to quit roof edit mode
-![Boundary Line](/images/4-floors-and-roofs/finished.png)
+![Boundary Line](/lessons/4-floors-and-roofs/finished.png)
 
 ## Save your file
 

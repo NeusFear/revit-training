@@ -28,7 +28,7 @@ Make sure you have the source files downloaded for this exercise. You can get th
 
 Once completed your building should look like this in the ``3D View (Roofs Hidden)`` View (new walls selected):
 
-![Exterior Walls Image](/images/2-modeling-walls/exterior.png)
+![Exterior Walls Image](/lessons/2-modeling-walls/exterior.png)
 
 ## Create Interior Walls
 
@@ -37,7 +37,7 @@ Once completed your building should look like this in the ``3D View (Roofs Hidde
 
 Once completed your building should look like this (new walls selected): 
 
-![Exterior Walls Image](/images/2-modeling-walls/interior.png)
+![Exterior Walls Image](/lessons/2-modeling-walls/interior.png)
 
 ## Save your file
 

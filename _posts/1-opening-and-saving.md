@@ -20,7 +20,7 @@ In this lesson you will learn how to open a project file and you will get starte
 
 ## Getting to know the User Interface
 
-![Blank User Interface](/images/1-opening-and-saving/interface.png)
+![Blank User Interface](/lessons/1-opening-and-saving/interface.png)
 
 Your screen should look something like this; Highlighted are the main sections of the Revit Interface and we will give them names so we are all on the same page.
 
@@ -38,7 +38,7 @@ Browse through the different Ribbon tabs to familiarize yourself with where a lo
 2. In the ``Import`` section click on ``Import CAD``
 3. From the dialogue box that pops up navigate to the file that you can download at the top of this page.
 4. Make sure that before you click "Open" that your selections match this:
-![Import Options](/images/1-opening-and-saving/import-options.png)
+![Import Options](/lessons/1-opening-and-saving/import-options.png)
 5. Click Open
 
 ## Save the file
