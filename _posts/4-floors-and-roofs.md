@@ -1,10 +1,10 @@
 ---
 title: 'Floors and Roofs'
 excerpt: 'Learn how to create floors and roofs for your revit models.'
-coverImage: '/images/4-floors-and-roofs/cover.jpg'
+coverImage: '/lessons/4-floors-and-roofs/cover.jpg'
 date: '2022-01-10T09:37:07.322Z'
 files: [
-  '/sources/lesson_4/Lab01_E3_Creating Roofs.rvt'
+  '/lessons/4-floors-and-roofs/Lab01_E3_Creating Roofs.rvt'
 ]
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: 'Opening & Saving'
 excerpt: 'This article goes over how to open a project file and identifies the main User Interface components.'
-coverImage: '/images/1-opening-and-saving/cover.jpg'
+coverImage: '/lessons/1-opening-and-saving/cover.jpg'
 date: '2022-01-03T09:37:07.322Z'
 files: [
-  '/sources/lesson_1/Lab00_E1_Residential Floor plan.dwg'
+  '/lessons/1-opening-and-saving/Lab00_E1_Residential Floor plan.dwg'
 ]
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: 'Doors and Windows'
 excerpt: 'This article goes over how to place doors and windows in your walls.'
-coverImage: '/images/3-doors-and-windows/cover.jpg'
+coverImage: '/lessons/3-doors-and-windows/cover.jpg'
 date: '2022-01-10T09:36:07.322Z'
 files: [
-  '/sources/lesson_3/Lab01_E2_Adding Doors and Windows.rvt'
+  '/lessons/3-doors-and-windows/Lab01_E2_Adding Doors and Windows.rvt'
 ]
 ---
 

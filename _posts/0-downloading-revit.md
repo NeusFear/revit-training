@@ -1,7 +1,7 @@
 ---
 title: 'Download & Installation'
 excerpt: 'This article goes over how to download and install Revit on your computer and make sure that you have all of the libraries needed to complete these assignments'
-coverImage: '/images/0-downloading-revit/cover.jpg'
+coverImage: '/lessons/0-downloading-revit/cover.jpg'
 date: '2022-01-03T09:35:07.322Z'
 ---
 
