@@ -12,7 +12,7 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
         {allPosts.map((post, index) => (
-          index < 2 && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+          index < 100 && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
       <Footer />

@@ -2,7 +2,7 @@
 title: 'Creating Roof Shapes'
 excerpt: 'Learn various ways to create and customize roof shapes and forms to fit the needs of your project.'
 coverImage: '/lessons/7-creating-roof-shapes/cover.jpg'
-date: '2022-01-12T09:39:07.322Z'
+date: '2022-01-11T09:39:07.322Z'
 files: [
   '/lessons/7-creating-roof-shapes/Lab02_E3_Creating roof shapes.rvt'
 ]
