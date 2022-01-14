@@ -8,8 +8,8 @@ export default function LessonNextPrev({ prevPost, nextPost }: { prevPost: PostT
   return (
     <section className="pb-10">
       <div className="md:grid md:grid-cols-2 gap-4">
-        {prevPost.title ? <PostPreview post={prevPost} prev={true} /> : <NothingToSeeHere prev={true} />}
-        {nextPost.title ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
+        {prevPost?.title ? <PostPreview post={prevPost} prev={true} /> : <NothingToSeeHere prev={true} />}
+        {nextPost?.title ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
       </div>
     </section>
   )

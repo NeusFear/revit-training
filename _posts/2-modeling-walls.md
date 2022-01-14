@@ -6,6 +6,8 @@ date: '2022-01-10T09:35:07.322Z'
 files: [
   '/lessons/2-modeling-walls/Lab01_E1_Modeling Exterior and Interior Walls.rvt'
 ]
+prev: '1-opening-and-saving'
+next: '3-doors-and-windows'
 ---
 
 In this lesson you will learn how to model interior and exterior walls by using an AutoCad drawing underlay as a guide.

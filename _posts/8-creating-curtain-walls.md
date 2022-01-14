@@ -6,6 +6,8 @@ date: '2022-01-12T09:37:20.322Z'
 files: [
   '/lessons/8-creating-curtain-walls/Lab03_E1_Creating curtain walls.rvt'
 ]
+prev: '7-creating-roof-shapes'
+next: '9-adjusting-grid-lines'
 ---
 
 Learn how to substitute an opaque wall with a curtain wall and define the grid layout through parametric Rules.

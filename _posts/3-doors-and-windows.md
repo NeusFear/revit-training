@@ -6,6 +6,8 @@ date: '2022-01-10T09:36:07.322Z'
 files: [
   '/lessons/3-doors-and-windows/Lab01_E2_Adding Doors and Windows.rvt'
 ]
+prev: '2-modeling-walls'
+next: '4-floors-and-roofs'
 ---
 
 In this lesson you will learn how to add doors and windows to your walls. You will also learn how to change the placement once inserted. Then you will learn how to change door window and height properties

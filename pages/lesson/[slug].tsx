@@ -8,11 +8,11 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import LessonNextPrev from '../../components/LessonNextPrev'
 import Navbar from '../../components/Navbar'
-import { getAllPosts, getNextPost, getPostBySlug, getPrevPost, PostType } from '../../lib/blogapi'
+import { getAllPosts, getPostBySlug, PostType } from '../../lib/blogapi'
 import markdownToHtml from '../../lib/markdownToHtml'
 import markdownStyles from '../../styles/markdown-styles.module.css'
 
-export default function Post({ post, prevPost, nextPost }: { post: PostType, prevPost: PostType, nextPost: PostType }) {
+export default function Post({ post }: { post: PostType }) {
 
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
@@ -48,7 +48,7 @@ export default function Post({ post, prevPost, nextPost }: { post: PostType, pre
               <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           </article>
-          <RecommendedPosts prevPost={prevPost} nextPost={nextPost} />
+          <RecommendedPosts prevPost={post.prev} nextPost={post.next} />
         </div>
       )}
       <Footer />
@@ -110,19 +110,19 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'slug',
     'content',
     'coverImage',
-    'files'
+    'files',
+    'next',
+    'prev'
   ])
   const content = await markdownToHtml(post.content || '')
-
-  const prevPost = getPrevPost(params.slug, [
+  const prev = await getPostBySlug(post.prev, [
     'title',
     'date',
     'coverImage',
     'excerpt',
     'slug'
   ])
-
-  const nextPost = getNextPost(params.slug, [
+  const next = await getPostBySlug(post.next, [
     'title',
     'date',
     'coverImage',
@@ -135,13 +135,9 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
       post: {
         ...post,
         content,
+        prev,
+        next,
       },
-      prevPost: {
-        ...prevPost
-      },
-      nextPost: {
-        ...nextPost
-      }
     },
   }
 }

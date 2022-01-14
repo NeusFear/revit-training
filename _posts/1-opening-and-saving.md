@@ -6,6 +6,8 @@ date: '2022-01-03T09:37:07.322Z'
 files: [
   '/lessons/1-opening-and-saving/Lab00_E1_Residential Floor plan.dwg'
 ]
+prev: '0-downloading-revit'
+next: '2-modeling-walls'
 ---
 
 In this lesson you will learn how to open a project file and you will get started learning the User Interface in Revit.

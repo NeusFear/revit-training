@@ -6,6 +6,8 @@ date: '2022-01-12T09:40:07.322Z'
 files: [
   '/lessons/11-doors-in-curtain-walls/Lab03_E4_Placing door in curtain walls.rvt'
 ]
+prev: '10-curtain-panel-types'
+next: '12-stairs-and-ramps'
 ---
 
 Adjust a curtain segment to create a panel with the dimensions desired to house a door within a curtain wall from the model of previous exercises.

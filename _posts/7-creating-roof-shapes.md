@@ -6,6 +6,8 @@ date: '2022-01-11T09:39:07.322Z'
 files: [
   '/lessons/7-creating-roof-shapes/Lab02_E3_Creating roof shapes.rvt'
 ]
+prev: '6-adding-openings'
+next: '8-creating-curtain-walls'
 ---
 
 In this lesson you will create two hip roofs and join them for the house used in the previous exercise. You will also learn how to fine tune the roof footprint and properties to create various roof shapes and forms. You will also create a custom roof form by extruding a surface from a sketched profile.

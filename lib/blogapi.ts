@@ -2,7 +2,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import { join } from 'path'
 
-export type PostType = { title: string, slug: string, coverImage: string, date: string, files: string[], excerpt: string, content: string }
+export type PostType = { title: string, slug: string, coverImage: string, date: string, files: string[], excerpt: string, content: string, prev: any, next: any }
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -11,6 +11,7 @@ export function getPostSlugs() {
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
+  if (slug == null) return null;
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -42,18 +43,4 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? 1 : -1))
   return posts
-}
-
-export function getPrevPost(post: string, fields: string[] = []) {
-  const posts = getAllPosts(fields)
-  const current = posts.findIndex(element => element.slug = post);
-  if (current == 0) return null;
-  return posts[current - 1];
-}
-
-export function getNextPost(post: string, fields: string[] = []) {
-  const posts = getAllPosts(fields)
-  const current = posts.findIndex(element => element.slug = post);
-  if (current == (posts.length - 1)) return null;
-  return posts[current + 1];
 }

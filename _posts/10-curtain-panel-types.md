@@ -6,6 +6,8 @@ date: '2022-01-12T09:39:07.322Z'
 files: [
   '/lessons/10-curtain-panel-types/Lab03_E3_Creating curtain panel types.rvt'
 ]
+prev: '9-adjusting-grid-lines'
+next: '11-doors-in-curtain-walls'
 ---
 
 In this lesson we will learn how to create a curtain panel type and lout for the house used in the previous exercises.

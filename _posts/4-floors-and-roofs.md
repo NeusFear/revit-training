@@ -6,6 +6,8 @@ date: '2022-01-10T09:37:07.322Z'
 files: [
   '/lessons/4-floors-and-roofs/Lab01_E3_Creating Roofs.rvt'
 ]
+prev: '3-doors-and-windows'
+next: '5-modeling-wall-types'
 ---
 
 In this lesson you will learn how to create floors and roofs for your revit models. We will be doing this based on building footprint, a sketch, and adjusting the properties of the roofs.

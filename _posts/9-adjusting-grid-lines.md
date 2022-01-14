@@ -6,6 +6,8 @@ date: '2022-01-12T09:38:07.322Z'
 files: [
   '/lessons/9-adjusting-grid-lines/Lab03_E2_Adjusting grid lines.rvt'
 ]
+prev: '8-creating-curtain-walls'
+next: '10-curtain-panel-types'
 ---
 
 In this lesson learn how to add new grid lines to existing curtain walls and edit existing grid lines and segments. Learn how to pin and unpin elements to prevent or allow changes to the layout

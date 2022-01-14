@@ -6,6 +6,8 @@ date: '2022-01-11T09:37:07.322Z'
 files: [
   '/lessons/5-modeling-wall-types/Lab02_E1_Modelling wall types_structures_design features.rvt'
 ]
+prev: '4-floors-and-roofs'
+next: '6-adding-openings'
 ---
 
 In this lesson you will learn how to edit a wall type by substitution-in-place.
