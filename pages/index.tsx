@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import BackgroundImage from '../components/BackgroundImage';
 import DateFormatter from '../components/DateFormatter';
 import Footer from '../components/Footer';
@@ -7,14 +8,17 @@ import { getAllPosts, PostType } from '../lib/blogapi';
 
 const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
 
+  const [hide, setHide] = useState(true);
+
   return (
     <div className="overflow-x-hidden">
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
         {allPosts.map((post, index) => (
-          index < 2 && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+          (!hide || index < 2) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
+      <div className="w-screen h-1 bg-white cursor-pointer" onClick={() => setHide(false)}></div>
       <Footer />
     </div>
   );
