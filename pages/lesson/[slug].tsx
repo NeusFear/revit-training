@@ -114,6 +114,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'next',
     'prev'
   ])
+  if (post == null) return;
   const content = await markdownToHtml(post.content || '')
   const prev = await getPostBySlug(post.prev, [
     'title',
@@ -149,7 +150,7 @@ export async function getStaticPaths() {
     paths: posts.map((post) => {
       return {
         params: {
-          slug: post.slug,
+          slug: post?.slug,
         },
       }
     }),
