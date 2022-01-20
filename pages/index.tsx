@@ -27,7 +27,7 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
 const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
 
   return (
-    <div className="rounded-md bg-neutral-700 mb-4 h-min">
+    <div className="rounded-md bg-neutral-700 h-full">
       <CoverImage
         slug={post.slug}
         title={"Lesson " + index + ": " + post.title}
