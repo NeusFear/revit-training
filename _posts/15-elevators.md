@@ -7,6 +7,7 @@ files: [
   '/lessons/15-elevators/Lab04_E4_Creating an Elevator.rvt'
 ]
 prev: '14-floor-openings'
+next: '16-modeling-components'
 ---
 
 In this lesson you will learn how to place an elevator component, add walls to enclose the elevator, cut an elevator shaft between all levels, and provide openings in the shaft walls to access the elevator at each floor.
