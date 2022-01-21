@@ -1,6 +1,6 @@
 ---
-title: 'Floors and Roofs'
-excerpt: 'Learn how to create floors and roofs for your revit models.'
+title: 'Modeling Roofs'
+excerpt: 'Learn how to create simple roofs for your revit models.'
 coverImage: '/lessons/4-floors-and-roofs/cover.jpg'
 date: '2022-01-10T09:37:07.322Z'
 files: [
@@ -10,7 +10,7 @@ prev: '3-doors-and-windows'
 next: '5-modeling-wall-types'
 ---
 
-In this lesson you will learn how to create floors and roofs for your revit models. We will be doing this based on building footprint, a sketch, and adjusting the properties of the roofs.
+In this lesson you will learn how to create simple roofs for your revit models. We will be doing this based on building footprint, a sketch, and adjusting the properties of the roofs.
 
 ## Getting Started
 
