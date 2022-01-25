@@ -25,12 +25,15 @@ const PostPreview = ({ post, prev }: { post: PostType, prev: boolean }) => {
         src={post.coverImage}
       />
       <div className="relative">
-        <p className="bg-blue-600 absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3">{post.label || "?"}</p>
+        <p className="bg-blue-600 absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3 text-xs font-semibold py-1 shadow-lg">{post.label || "?"}</p>
       </div>
       <div className="py-4 px-8 text-white">
-        <h3 className="text-2xl mb-3 leading-snug">
+        <h3 className="text-2xl mb-3 leading-snug group flex flex-col">
           <Link as={`/lesson/${post.slug}`} href="/lesson/[slug]">
-            <a className="hover:underline font-semibold">{post.title}</a>
+            <a className="group-hover:underline font-semibold text-xl text-blue-400">{prev ? "Previous Lesson" : "Next Lesson"}</a>
+          </Link>
+          <Link as={`/lesson/${post.slug}`} href="/lesson/[slug]">
+            <a className="group-hover:underline font-semibold">{post.title}</a>
           </Link>
         </h3>
         <div className="mb-2">
