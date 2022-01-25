@@ -8,6 +8,7 @@ files: [
 ]
 prev: '9-adjusting-grid-lines'
 next: '11-doors-in-curtain-walls'
+label: 'Lab03 E3'
 ---
 
 In this lesson we will learn how to create a curtain panel type and lout for the house used in the previous exercises.

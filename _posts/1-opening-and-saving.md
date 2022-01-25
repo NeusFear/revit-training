@@ -8,6 +8,7 @@ files: [
 ]
 prev: '0-downloading-revit'
 next: '2-modeling-walls'
+label: 'Lab00 E1'
 ---
 
 In this lesson you will learn how to open a project file and you will get started learning the User Interface in Revit.

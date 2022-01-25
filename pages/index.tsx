@@ -33,6 +33,9 @@ const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
         title={"Lesson " + index + ": " + post.title}
         src={post.coverImage}
       />
+      <div className="relative">
+        <p className="bg-blue-600 absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3">{post.label || "?"}</p>
+      </div>
       <div className="py-4 px-8 text-white">
         <h3 className="text-2xl mb-3 leading-snug">
           <p className="text-xs -mb-1.5 text-neutral-500">Lesson {index}</p>
@@ -72,6 +75,7 @@ export async function getStaticProps() {
     'date',
     'coverImage',
     'excerpt',
+    'label'
   ])
 
   return {

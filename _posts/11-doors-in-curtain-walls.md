@@ -8,6 +8,7 @@ files: [
 ]
 prev: '10-curtain-panel-types'
 next: '12-stairs-and-ramps'
+label: 'Lab03 E4'
 ---
 
 Adjust a curtain segment to create a panel with the dimensions desired to house a door within a curtain wall from the model of previous exercises.

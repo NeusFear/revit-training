@@ -8,6 +8,7 @@ files: [
 ]
 prev: '1-opening-and-saving'
 next: '3-doors-and-windows'
+label: 'Lab01 E1'
 ---
 
 In this lesson you will learn how to model interior and exterior walls by using an AutoCad drawing underlay as a guide.

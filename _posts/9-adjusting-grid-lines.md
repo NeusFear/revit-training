@@ -8,6 +8,7 @@ files: [
 ]
 prev: '8-creating-curtain-walls'
 next: '10-curtain-panel-types'
+label: 'Lab03 E2'
 ---
 
 In this lesson learn how to add new grid lines to existing curtain walls and edit existing grid lines and segments. Learn how to pin and unpin elements to prevent or allow changes to the layout

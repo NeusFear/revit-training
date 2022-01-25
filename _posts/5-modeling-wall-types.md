@@ -8,6 +8,7 @@ files: [
 ]
 prev: '4-floors-and-roofs'
 next: '6-adding-openings'
+label: 'Lab02 E1'
 ---
 
 In this lesson you will learn how to edit a wall type by substitution-in-place.

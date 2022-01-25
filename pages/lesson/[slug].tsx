@@ -121,14 +121,16 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'date',
     'coverImage',
     'excerpt',
-    'slug'
+    'slug',
+    'label'
   ])
   const next = await getPostBySlug(post.next, [
     'title',
     'date',
     'coverImage',
     'excerpt',
-    'slug'
+    'slug',
+    'label'
   ])
 
   return {

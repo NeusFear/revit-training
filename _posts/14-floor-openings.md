@@ -8,6 +8,7 @@ files: [
 ]
 prev: '13-custom-stairs'
 next: '15-elevators'
+label: 'Lab04 E3'
 ---
 
 In this lesson we will be cutting an opening to allow stairs to cut through floors, calculate the head height of stairways, modify floor openings, create Railings around floor openings, and modify physical properties of railings.

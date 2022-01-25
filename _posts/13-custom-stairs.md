@@ -8,6 +8,7 @@ files: [
 ]
 prev: '12-stairs-and-ramps'
 next: '14-floor-openings'
+label: 'Lab04 E2'
 ---
 
 In this lesson you will learn how to edit the sketch to change the stair boundary and shape of risers. You will learn how to change stair and rail types, and modify the steepness of a stair by adjusting it's properties. Finally you will learn how to create a spiral stair.
