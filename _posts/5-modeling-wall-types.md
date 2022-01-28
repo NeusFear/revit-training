@@ -53,7 +53,7 @@ Make sure you have the source files downloaded for this exercise. You can get th
 
 1. Select all interior walls with type ``Interior - 3 1/8" Partition (1-hr)`` just like we did for the exterior walls.
 2. Replace them with the ``Wood Panel Wall`` type we just created.
-3. Select the ``Panel`` labeled walls on the south side of the building and set their type to ``Interior - 3 1/8" Partition (1-hr)`` too.
+3. Select the ``Panel`` labeled walls on the south side of the building and set their type to ``Wood Panel Wall`` too.
 4. Open the ``{3D}`` 3D view and verify it looks like the image below.
 ![Panel Walls](/lessons/5-modeling-wall-types/panel.png)
 
