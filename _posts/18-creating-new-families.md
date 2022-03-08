@@ -7,6 +7,7 @@ files: [
   '/lessons/18-creating-new-families/Lab05_E3_Creating New Families.rvt'
 ]
 prev: '17-modifying-family-definitions'
+next: '19-creating-plan-views'
 label: 'Lab05 E3'
 ---
 

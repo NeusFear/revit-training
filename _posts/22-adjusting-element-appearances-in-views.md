@@ -7,6 +7,7 @@ files: [
   '/lessons/22-adjusting-element-appearances-in-views/Lab06_E4_Adjusting the Appearance of Elements in a View.rvt'
 ]
 prev: '21-creating-3d-views'
+next: '23-assigning-render-materials'
 label: 'Lab06 E4'
 ---
 
