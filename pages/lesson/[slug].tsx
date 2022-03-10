@@ -73,7 +73,7 @@ const FileDownloader = ({ file }: { file: string }) => {
   const fileName = file.split("/");
 
   return (
-    <div className="bg-neutral-300 rounded-md p-4 flex flex-row">
+    <div className="bg-neutral-300 rounded-md p-4 flex flex-row mb-2">
       <SVGDownload className="w-4 h-4" />
       <a className="text-xs ml-4 hover:underline" href={file} download>{fileName[fileName.length - 1]}</a>
     </div>
