@@ -8,7 +8,7 @@ files: [
 ]
 prev: '15-elevators'
 next: '17-modifying-family-definitions.md'
-label: 'Lab05 E1'
+label: {type: "lab", title: "Lab05 E1"}
 ---
 
 In this lesson we will create a dining table using Revit's model in place tools by creating simple extrusions.

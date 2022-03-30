@@ -8,7 +8,7 @@ files: [
 ]
 prev: '11-doors-in-curtain-walls'
 next: '13-custom-stairs'
-label: 'Lab04 E1'
+label: {type: "lab", title: "Lab04 E1"}
 ---
 
 In this lesson we will go over the basics of creating a stair by sketching run lines. We will lean to Flip a stair direction into place, Create stairs with multiple runs and complex layouts like L-shaped, U-shaped, and curved stairs. You will also learn how to create and modify ramps.

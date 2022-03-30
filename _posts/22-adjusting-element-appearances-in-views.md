@@ -8,7 +8,7 @@ files: [
 ]
 prev: '21-creating-3d-views'
 next: '23-assigning-render-materials'
-label: 'Lab06 E4'
+label: {type: "lab", title: "Lab06 E4"}
 ---
 
 In this lesson we will learn how to use the View Control bar to quickly change a view's display properties. We will also learn how to enable shadows and to specify the location of the light source. We will also learn how to set the location of the building to form an accurate solar study. Finally we will use the Graphics Display options to enhance the silhouettes of elements and add gradient backgrounds to 3D views.

@@ -4,7 +4,7 @@ excerpt: 'This article goes over how to download and install Revit on your compu
 coverImage: '/lessons/0-downloading-revit/cover.jpg'
 date: '2022-01-03T09:35:07.322Z'
 next: '1-opening-and-saving'
-label: 'Lab00 E0'
+label: {type: "lab", title: "Lab00 E0"}
 ---
 
 This is the first of many Lessons outlining how to use Revit as an Architect. We will go over the basics as well as some advanced topics in these lessons. But first thing's first; we need to download the app before we can learn how to use it.

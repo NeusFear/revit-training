@@ -8,7 +8,7 @@ files: [
 ]
 prev: '17-modifying-family-definitions'
 next: '19-creating-plan-views'
-label: 'Lab05 E3'
+label: {type: "lab", title: "Lab05 E3"}
 ---
 
 In this lesson we will use the family editor to add reference planes, dimensions, and parameters. We will test these parameters and define family types. Then we will use the different family types in our model.

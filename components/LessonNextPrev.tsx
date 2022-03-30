@@ -17,6 +17,10 @@ export default function LessonNextPrev({ prevPost, nextPost }: { prevPost: PostT
 
 const PostPreview = ({ post, prev }: { post: PostType, prev: boolean }) => {
 
+  var postColor = "bg-black";
+  if (post.label.type == "lab") postColor = "bg-blue-600"
+  if (post.label.type == "extra") postColor = "bg-orange-600"
+
   return (
     <div className="rounded-md bg-neutral-700 mb-4">
       <CoverImage
@@ -25,7 +29,9 @@ const PostPreview = ({ post, prev }: { post: PostType, prev: boolean }) => {
         src={post.coverImage}
       />
       <div className="relative">
-        <p className="bg-blue-600 absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3 text-xs font-semibold py-1 shadow-lg">{post.label || "?"}</p>
+        <p className={postColor + " absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3 text-xs font-semibold py-1 shadow-lg"}>
+          {post.label.title || "?"}
+        </p>
       </div>
       <div className="py-4 px-8 text-white">
         <h3 className="text-2xl mb-3 leading-snug group flex flex-col">

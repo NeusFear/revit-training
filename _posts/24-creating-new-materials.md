@@ -8,7 +8,7 @@ files: [
 ]
 prev: '23-assigning-render-materials'
 next: '25-creating-exterior-renderings'
-label: 'Lab07 E2'
+label: {type: "lab", title: "Lab07 E2"}
 ---
 
 In this exercise we will learn how to create new rendering materials by accessing the Asset Browser material library to import rendering materials into the current project for use in your renderings. We will do this by duplicating existing materials and editing shading colors, replacing render appearance assigned to materials by using the settings that Revit exposes, down to just tweaking values to customize a material that is pretty close. It sounds more complicated than it is.

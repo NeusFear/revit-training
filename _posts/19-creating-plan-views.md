@@ -8,7 +8,7 @@ files: [
 ]
 prev: '18-creating-new-families'
 next: '20-creating-elevations-and-sections'
-label: 'Lab06 E1'
+label: {type: "lab", title: "Lab06 E1"}
 ---
 
 In this lesson we will create new plan views b using the Plan View tool or by duplicating existing plan views. We will then learn how to select which types of elements should appear in a plan by setting visibility graphics overrides. We will learn how to crop views, adjust the view range, clipping plane, etc.. We will also learn how to set an underlay in a view for seeing the floor below. We will also change the scale of a plan view and adjust the detail level shown.

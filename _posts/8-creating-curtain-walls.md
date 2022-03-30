@@ -8,7 +8,7 @@ files: [
 ]
 prev: '7-creating-roof-shapes'
 next: '9-adjusting-grid-lines'
-label: 'Lab03 E1'
+label: {type: "lab", title: "Lab03 E1"}
 ---
 
 Learn how to substitute an opaque wall with a curtain wall and define the grid layout through parametric Rules.

@@ -2,7 +2,24 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import { join } from 'path'
 
-export type PostType = { title: string, slug: string, coverImage: string, date: string, files: string[], excerpt: string, content: string, prev: any, next: any, label: string }
+export type LabelType = {
+  type: string,
+  title: string
+}
+
+export type PostType = {
+  title: string,
+  slug: string,
+  coverImage: string,
+  date: string,
+  files: string[],
+  video: string,
+  excerpt: string,
+  content: string,
+  prev: any,
+  next: any,
+  label: LabelType
+}
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -40,7 +57,7 @@ export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs()
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
+    // sort posts by date
     .sort((post1, post2) => ((post1 == null || post2 == null ) ? 0 : post1.date > post2.date ? 1 : -1))
   return posts
 }

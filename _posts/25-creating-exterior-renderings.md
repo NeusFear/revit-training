@@ -8,7 +8,7 @@ files: [
 ]
 prev: '24-creating-new-materials'
 next: '26-creating-panoramas'
-label: 'Lab08 E1'
+label: {type: "lab", title: "Lab08 E1"}
 ---
 
 In this exercise we will look at the configuration settings for creating a cloud rendering of an existing exterior perspective camera view from a Revit Model.

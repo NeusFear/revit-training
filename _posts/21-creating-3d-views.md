@@ -8,7 +8,7 @@ files: [
 ]
 prev: '20-creating-elevations-and-sections'
 next: '22-adjusting-element-appearances-in-views'
-label: 'Lab06 E3'
+label: {type: "lab", title: "Lab06 E3"}
 ---
 
 In this lesson we will learn how to duplicate the default 3D view to create additional orthogonal views. We will also use the ViewCube and the SteeringWheels widgets to change the view settings. Next we will use the Selection Vox to create 3D versions of our plan and section views. We will also learn how to create and edit Perspective views.

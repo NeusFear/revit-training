@@ -8,7 +8,7 @@ files: [
 ]
 prev: '5-modeling-wall-types'
 next: '7-creating-roof-shapes'
-label: 'Lab02 E2'
+label: {type: "lab", title: "Lab02 E2"}
 ---
 
 In this lesson you will place windows and doors and change their locations with temporary dimensions. You will also learn to quickly place groups of regularly spaced windows. Learn the Group and Associate array option. Edit Door and Window Instance properties and create new ones. You will also learn how to create empty wall openings.

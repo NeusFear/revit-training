@@ -44,7 +44,8 @@ export default function Post({ post }: { post: PostType }) {
               </h1>
               <DateFormatter dateString={post.date} />
               <div className="w-full bg-neutral-800 h-0.5 my-10"></div>
-              {post.files && <FileDownloaderList files={post.files} />}
+                {post.files && <FileDownloaderList files={post.files} />}
+                {post.video && <VideoSection video={post.video} />}
               <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           </article>
@@ -54,6 +55,16 @@ export default function Post({ post }: { post: PostType }) {
       <Footer />
     </div>
   )
+}
+
+const VideoSection = ({ video }: { video: string }) => {
+  return (
+    <div>
+      <video controls>
+        <source src={video} type="video/mp4"/>
+      </video>
+    </div>
+  );
 }
 
 const FileDownloaderList = ({ files }: { files: string[] }) => {
@@ -68,8 +79,8 @@ const FileDownloaderList = ({ files }: { files: string[] }) => {
   );
 }
 
-const FileDownloader = ({ file }: { file: string }) => { 
-  
+const FileDownloader = ({ file }: { file: string }) => {
+
   const fileName = file.split("/");
 
   return (
@@ -82,9 +93,9 @@ const FileDownloader = ({ file }: { file: string }) => {
 
 const SVGDownload = (props: SVGProps<SVGSVGElement>) => {
   return (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-      </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
   )
 }
 
@@ -112,7 +123,8 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     'coverImage',
     'files',
     'next',
-    'prev'
+    'prev',
+    'video'
   ])
   if (post == null) return;
   const content = await markdownToHtml(post.content || '')

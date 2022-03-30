@@ -8,7 +8,7 @@ files: [
 ]
 prev: '27-creating-solar-studies'
 next: '29-downloading-and-sharing-images'
-label: 'Lab08 E4'
+label: {type: "lab", title: "Lab08 E4"}
 ---
 
 In this lesson we will learn how to create Illuminance studies for our spaces in Revit using the Autodesk Cloud Rendering program.

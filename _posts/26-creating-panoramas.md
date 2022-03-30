@@ -5,7 +5,7 @@ coverImage: '/lessons/26-creating-panoramas/cover.jpeg'
 date: '2022-03-10T09:02:00.000Z'
 prev: '25-creating-exterior-renderings'
 next: '27-creating-solar-studies'
-label: 'Lab08 E2'
+label: {type: "lab", title: "Lab08 E2"}
 ---
 
 In this lesson we will learn about how to create a Panoramic View with Revit Cloud rendering which means you can look all around from the point of view of the rendering.

@@ -8,7 +8,7 @@ files: [
 ]
 prev: '19-creating-plan-views'
 next: '21-creating-3d-views'
-label: 'Lab06 E2'
+label: {type: "lab", title: "Lab06 E2"}
 ---
 
 In this lesson we will place elevation tags to create new elevation views. We will modify view properties to adjust the crop region, level of detail, and scale. We will also set Visibility / Graphics overrides to choose which objects appear in views.

@@ -15,7 +15,7 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
         {allPosts.map((post, index) => (
-          (!hide || index < 30) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+          (!hide || index < 31) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
       <div className="w-screen h-1 bg-white cursor-pointer" onClick={() => setHide(false)}></div>
@@ -26,6 +26,10 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
 
 const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
 
+  var postColor = "bg-black";
+  if (post.label.type == "lab") postColor = "bg-blue-600"
+  if (post.label.type == "extra") postColor = "bg-orange-600"
+
   return (
     <div className="rounded-md bg-neutral-700 h-full">
       <CoverImage
@@ -34,7 +38,9 @@ const PostPreview = ({ post, index }: { post: PostType, index: number }) => {
         src={post.coverImage}
       />
       <div className="relative">
-        <p className="bg-blue-600 absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3 text-xs font-semibold py-1 shadow-lg">{post.label || "?"}</p>
+        <p className={postColor + " absolute right-0 z-10 px-4 text-white rounded-full -translate-x-3 -translate-y-3 text-xs font-semibold py-1 shadow-lg"}>
+          {post.label.title || "?"}
+        </p>
       </div>
       <div className="py-4 px-8 text-white">
         <h3 className="text-2xl mb-3 leading-snug">

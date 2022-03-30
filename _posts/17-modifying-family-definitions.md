@@ -8,7 +8,7 @@ files: [
 ]
 prev: '16-modeling-components'
 next: '18-creating-new-families'
-label: 'Lab05 E2'
+label: {type: "lab", title: "Lab05 E2"}
 ---
 
 In this lesson we will use an existing component family to adapt them for future uses. We will add new forms and change instance parameters for these families. We will assign new materials and add dimension properties. We will also define new component family types and load them into our projects.

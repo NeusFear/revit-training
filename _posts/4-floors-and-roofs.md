@@ -8,7 +8,7 @@ files: [
 ]
 prev: '3-doors-and-windows'
 next: '5-modeling-wall-types'
-label: 'Lab01 E3'
+label: {type: "lab", title: "Lab01 E3"}
 ---
 
 In this lesson you will learn how to create simple roofs for your revit models. We will be doing this based on building footprint, a sketch, and adjusting the properties of the roofs.

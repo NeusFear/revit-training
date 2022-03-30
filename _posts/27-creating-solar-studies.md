@@ -5,7 +5,7 @@ coverImage: '/lessons/27-creating-solar-studies/cover.jpg'
 date: '2022-03-10T09:03:00.000Z'
 prev: '26-creating-panoramas'
 next: '28-creating-illuminance-study'
-label: 'Lab08 E3'
+label: {type: "lab", title: "Lab08 E3"}
 ---
 
 In this lesson learn how to create a solar study for your Revit View using the Autodesk Cloud Rendering service.

@@ -4,7 +4,8 @@ excerpt: 'Learn how to share your renderings made with Cloud 360'
 coverImage: '/lessons/29-downloading-and-sharing-images/cover.jpg'
 date: '2022-03-10T09:05:00.000Z'
 prev: '28-creating-illuminance-study'
-label: 'Lab08 E5'
+next: 'revit-worksharing'
+label: {type: "lab", title: "Lab08 E5"}
 ---
 
 In this lesson we will learn how to download each of the types of rendering that we created in the past 4 lessons. We will do so both by downloading the files themselves or by using a share link.

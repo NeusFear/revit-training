@@ -8,7 +8,7 @@ files: [
 ]
 prev: '6-adding-openings'
 next: '8-creating-curtain-walls'
-label: 'Lab02 E3'
+label: {type: "lab", title: "Lab02 E3"}
 ---
 
 In this lesson you will create two hip roofs and join them for the house used in the previous exercise. You will also learn how to fine tune the roof footprint and properties to create various roof shapes and forms. You will also create a custom roof form by extruding a surface from a sketched profile.

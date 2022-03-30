@@ -8,7 +8,7 @@ files: [
 ]
 prev: '22-adjusting-element-appearances-in-views'
 next: '24-creating-new-materials'
-label: 'Lab07 E1'
+label: {type: "lab", title: "Lab07 E1"}
 ---
 
 In this lesson we will learn how to assign materials to model elements using object styles, type properties, and instance properties. We will also adjust the render appearance of materials to display realistic views.
