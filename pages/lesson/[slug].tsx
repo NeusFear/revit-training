@@ -1,6 +1,7 @@
 import ErrorPage from 'next/error'
 import { useRouter } from 'next/router'
 import { SVGProps } from 'react'
+import ReactPlayer from 'react-player'
 import BackgroundImage from '../../components/BackgroundImage'
 import Container from '../../components/Container'
 import DateFormatter from '../../components/DateFormatter'
@@ -60,9 +61,7 @@ export default function Post({ post }: { post: PostType }) {
 const VideoSection = ({ video }: { video: string }) => {
   return (
     <div>
-      <video controls>
-        <source src={video} type="video/mp4"/>
-      </video>
+      <ReactPlayer controls={true} url={ video } />
     </div>
   );
 }
