@@ -1,5 +1,5 @@
 ---
-title: 'Into to Revit Parametrics'
+title: 'Intro to Revit Parametrics'
 excerpt: 'Learn how to create a Parametric Skin in Revit'
 coverImage: '/extra/parametrics/p1/cover.jpg'
 date: '2022-04-06T09:05:00.000Z'
