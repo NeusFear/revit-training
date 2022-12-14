@@ -4,6 +4,7 @@ import BackgroundImage from '../components/BackgroundImage';
 import DateFormatter from '../components/DateFormatter';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { releasedLessons } from '../config/currentLesson';
 import { getAllPosts, PostType } from '../lib/blogapi';
 
 const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
@@ -14,7 +15,9 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
     <div className="overflow-x-hidden">
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
-        {allPosts.map((post, index) => <PostPreview post={post} index={index} key={"post" + index + post.slug} /> )}
+        {allPosts.map((post, index) => (
+          (!hide || index <= releasedLessons) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+        ))}
       </div>
       <div className="w-screen h-1 bg-white cursor-pointer" onClick={() => setHide(false)}></div>
       <Footer />
