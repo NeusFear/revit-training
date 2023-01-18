@@ -12,13 +12,14 @@ const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
   const [hide, setHide] = useState(true);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden min-h-screen flex flex-col">
       <Navbar />
-      <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8 min-h-screen">
+      <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8">
         {allPosts.map((post, index) => (
           (!hide || index <= releasedLessons) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
+      <div className="flex-grow"></div>
       <div className="w-screen h-1 bg-white cursor-pointer" onClick={() => setHide(false)}></div>
       <Footer />
     </div>

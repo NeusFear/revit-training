@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { releasedLessons } from '../config/currentLesson';
 import { PostType } from '../lib/blogapi';
 import BackgroundImage from './BackgroundImage';
 import DateFormatter from './DateFormatter';
@@ -9,7 +10,7 @@ export default function LessonNextPrev({ prevPost, nextPost }: { prevPost: PostT
     <section className="pb-10">
       <div className="md:grid md:grid-cols-2 gap-4">
         {prevPost?.title ? <PostPreview post={prevPost} prev={true} /> : <NothingToSeeHere prev={true} />}
-        {nextPost?.title ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
+        {nextPost?.title && +nextPost?.slug.split("-")[0] <= releasedLessons ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
       </div>
     </section>
   )
