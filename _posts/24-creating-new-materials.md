@@ -7,7 +7,7 @@ files: [
   '/lessons/24-creating-new-materials/Lab07_E2_Creating New Materials.rvt'
 ]
 prev: '23-assigning-render-materials'
-next: '25-creating-exterior-renderings'
+next: '25-revit-worksharing'
 label: {type: "lab", title: "Lab07 E2"}
 ---
 

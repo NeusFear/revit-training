@@ -1,26 +1,21 @@
 import Link from 'next/link';
-import { useState } from 'react';
 import BackgroundImage from '../components/BackgroundImage';
 import DateFormatter from '../components/DateFormatter';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import { maxReleasedLessonIndex, minReleasedLessonIndex } from '../config/currentLesson';
-import { getAllPosts, PostType } from '../lib/blogapi';
+import { PostType, getAllPosts } from '../lib/blogapi';
 
 const HomePage = ({ allPosts }: { allPosts: PostType[] }) => {
-
-  const [hide, setHide] = useState(true);
-
   return (
     <div className="overflow-x-hidden min-h-screen flex flex-col">
       <Navbar />
       <div className="w-screen grid grid-flow-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-8">
         {allPosts.map((post, index) => (
-          (!hide || (index >= minReleasedLessonIndex && index <= maxReleasedLessonIndex)) && <PostPreview post={post} index={index} key={"post" + index + post.slug} />
+          <PostPreview post={post} index={index} key={"post" + index + post.slug} />
         ))}
       </div>
       <div className="flex-grow"></div>
-      <div className="w-screen h-1 bg-white cursor-pointer" onClick={() => setHide(false)}></div>
+      <div className="w-screen h-1 bg-white cursor-pointer"></div>
       <Footer />
     </div>
   );

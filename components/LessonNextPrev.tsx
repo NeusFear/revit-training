@@ -1,19 +1,15 @@
 import Link from 'next/link';
-import { maxReleasedLessonIndex, minReleasedLessonIndex } from '../config/currentLesson';
 import { PostType } from '../lib/blogapi';
 import BackgroundImage from './BackgroundImage';
 import DateFormatter from './DateFormatter';
 
 export default function LessonNextPrev({ prevPost, nextPost }: { prevPost: PostType, nextPost: PostType }) {
 
-  let showNextLesson = +nextPost?.slug.split("-")[0] <= maxReleasedLessonIndex
-  let showPrevLesson = +prevPost?.slug.split("-")[0] >= minReleasedLessonIndex
-
   return (
     <section className="pb-10">
       <div className="md:grid md:grid-cols-2 gap-4">
-        {prevPost?.title && showPrevLesson ? <PostPreview post={prevPost} prev={true} /> : <NothingToSeeHere prev={true} />}
-        {nextPost?.title && showNextLesson ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
+        {prevPost?.title ? <PostPreview post={prevPost} prev={true} /> : <NothingToSeeHere prev={true} />}
+        {nextPost?.title ? <PostPreview post={nextPost} prev={false} /> : <NothingToSeeHere prev={false} />}
       </div>
     </section>
   )
@@ -75,9 +71,9 @@ const NothingToSeeHere = ({ prev }: { prev: boolean }) => {
     <div className="bg-neutral-700 p-4 rounded-md text-white text-2xl mb-4">
       {
         prev ?
-          <p className="px-5">No lessons visible before this one</p>
+          <p className="px-5">No lessons before this one</p>
           :
-          <p className="px-5">You&apos;ve read all the lessons for now. Awesome!</p>
+          <p className="px-5">You&apos;ve read all the lessons. Awesome!</p>
       }
     </div>
   );
