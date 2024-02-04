@@ -54,6 +54,6 @@ Make sure you have the source files downloaded for this exercise. You can get th
 
 ## Save your file
 
-Save your file as ``Spring2022_3262_firstinitial_lastname_LAB03_EX02.rvt``
+Save your file as ``Spring2024_3262_firstinitial_lastname_LAB03_EX02.rvt``
 
 #### Cover Image Credits: phplusarchitects.com

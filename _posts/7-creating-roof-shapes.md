@@ -68,6 +68,6 @@ In this section we will be creating a roof boundary with some edges sloping and 
 
 ## Save your file
 
-Save your file as ``Spring2022_3262_firstinitial_lastname_LAB02_EX03.rvt``
+Save your file as ``Spring2024_3262_firstinitial_lastname_LAB02_EX03.rvt``
 
 #### Cover Image Credits: re-thinkingthefuture.com

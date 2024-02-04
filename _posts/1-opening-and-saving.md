@@ -46,6 +46,6 @@ Browse through the different Ribbon tabs to familiarize yourself with where a lo
 
 ## Save the file
 
-Save the Revit file as: ``Spring2022_3262_firstinitial_lastname_LAB00_EX01.rvt``
+Save the Revit file as: ``Spring2024_3262_firstinitial_lastname_LAB00_EX01.rvt``
 
 #### Cover Image Credits: archcgi.com
